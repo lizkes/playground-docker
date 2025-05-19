@@ -1,0 +1,9 @@
+services:
+  playground-docker:
+    container_name: playground-docker
+    build: .
+    tty: true
+    network_mode: host
+    logging:
+      options:
+        max-size: "5m"
